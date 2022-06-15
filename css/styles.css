@@ -12,12 +12,22 @@
  */
 
 #footer{
-  position:absolute;
+  position:relative;
   bottom:0;
+}
+
+ul#menu li {
+  display:inline;
 }
 
 #gitlink{
   padding-top: 5%;
+}
+
+.spacer {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
 }
 
 :root {
@@ -4005,7 +4015,7 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #000;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4059,6 +4069,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background-color: black;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4073,8 +4084,8 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 0.01rem;
+  padding-bottom: 0.01rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
@@ -4096,8 +4107,8 @@ textarea.form-control-lg {
 }
 
 .navbar-text {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
 }
 
 .navbar-collapse {
@@ -7344,7 +7355,7 @@ textarea.form-control-lg {
 }
 
 .mt-5 {
-  margin-top: 3rem !important;
+  margin-top: 0.1rem !important;
 }
 
 .mt-auto {
@@ -7456,7 +7467,7 @@ textarea.form-control-lg {
 }
 
 .p-5 {
-  padding: 3rem !important;
+  padding: 2.4rem !important;
 }
 
 .px-0 {
@@ -7517,6 +7528,8 @@ textarea.form-control-lg {
 .py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
+  display: flex;
+
 }
 
 .pt-0 {
@@ -11332,7 +11345,7 @@ html {
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #000;
 }
 .navbar-custom .navbar-brand {
   text-transform: uppercase;
@@ -11347,11 +11360,16 @@ html {
   letter-spacing: 0.1rem;
 }
 
+.navbar-brand{
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
 header.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(7rem + 0px);
-  padding-bottom: 7rem;
+  padding-top: 9rem;
+  padding-bottom: 3rem;
   background: linear-gradient(0deg, #000 0%, #212121 100%);
   background-repeat: no-repeat;
   background-position: center center;
@@ -11372,7 +11390,7 @@ header.masthead .masthead-content .masthead-subheading {
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(1rem + 55px);
+    padding-top: 5rem;
     padding-bottom: 10rem;
   }
   header.masthead .masthead-content .masthead-heading {
