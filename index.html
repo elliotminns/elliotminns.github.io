@@ -9,6 +9,7 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <!-- Google fonts-->
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
@@ -22,26 +23,27 @@
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
             <div class="container px-5">
                     <img width="75rem" class="navbar-brand" href="#page-top" src="assets/img/Logo_Spin.gif">
-                    <a class="navbar-brand">Elliot Minns</a>
+                    <a class="navbar-brand d-none d-sm-inline">Elliot Minns</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="#!">Pocket Golf</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#scroll">Pocket Golf</a></li>
                         </ul>
                     </div>
             </div>
         </nav>
         <!-- Header-->
         <header class="masthead text-center text-white">
-                <div class="container px-5">
+                <div class="container px-51">
+                    <h1 class="text-responsive display-4"><span id="word">👋Hello👋</span></h1>
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6 order-lg-2">
-                            <div class="p-5"><img width="400rem" class="img-fluid rounded-circle" src="assets/img/Mugshot.JPG" alt="..." /></div>
+                            <div class="p-5"><img width="400rem" class="img-fluid rounded-circle border border-5 border-dark" src="assets/img/Mugshot.png" alt="..." /></div>
                         </div>
                         <div class="col-lg-6 order-lg-1">
                             <div class="p-5">
-                                <h2 class="display-4">About Me</h2>
-                                <p>I'm Elliot, an undergraduate software engineering student from the UK with avid interests in how technology has effected audio processing and production, and mobile technologies. Take some time to browse the collaborative and independant projects I have, and am currently undertaking.</p>
+                                <h1 class="display-4">About Me</h1>
+                                <em>Hello, I’m Elliot, an undergraduate software engineer from the UK with a keen interest in mobile technology - including designing, programming, testing, and launching finished apps. I am intrigued by the way mobile phones have simplified our everyday lives, from communication to entertainment, and am excited to continue learning about the evolving technologies we all use daily.<br><br>This website features the projects I have undertaken (and am undertaking) since starting my journey in software development.  Below you will find summaries of these projects, and further opportunities to learn about what I do. Salut!</em>
                             </div>
                         </div>
                     </div>
@@ -53,8 +55,8 @@
 
                 <div class="container">
                     <div class="col-sm">
-                    <p><a href="https://github.com/elliotminns">
-                        <img id="gitlink" src="assets/img/github_logo.png" alt="GitHub Icon" width="10%">
+                    <p><a href="https://github.com/elliotminns" target="_blank">
+                        <img id="gitlink" src="assets/img/github_logo.png" alt="GitHub Icon" width="100rem">
                     </a></p>
                     </div>
                 </div>
@@ -65,25 +67,13 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/01.png" alt="..." /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/pg_icon.png" alt="..." /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">Pocket Golf</h2>
-                            <p>Pocket Golf lets you bring Mini Golf with you in your pocket. Pocket Golf is a 100% Free game, with no advertisements. None. Collect coins around the 32 unique levels, and purchase cosmetic items that allow you to customise your style. Pocket Golf has been an on and off passion project of mine for some time, and I am so happy to finally share it with you. Enjoy!</p>
-                            <div class="row gx-5 align-items-center">
-                                <div class="d-flex flex-row justify-content-around">
-                                    <div class="p-2"><a class="btn btn-primary btn-l rounded-pill mt-5" href="#scroll">Learn More</a></div>
-
-                                    <div class="p-2"><p><a href="https://apps.apple.com/us/app/pocket-golf-arcade-mini-golf/id1611163035">
-                                        <img id="gitlink" src="assets/img/appstore_logo.png" alt="Appstore Icon" width="50%">
-                                    </a></p></div>
-
-                                    <div class="p-2"><p><a href="https://play.google.com/store/apps/details?id=com.ElliotMinns.PocketGolf">
-                                        <img src="assets/img/playstore_logo.png" alt="Playstore Icon" width="25%">
-                                    </a></p> </div>
-                                  </div>
-                            </div>
+                            <h2 class="display-pg">Pocket Golf - 24/02/2022</h2>
+                            <p>Pocket Golf is a hyper-casual 2D mobile game, developed independently using the Unity Engine. It’s free on both the App Store and Google Play, with no aggressive monetization strategy or pushy advertisements.</p>
+                            <div class="p-2"><a class="btn btn-primary btn-l rounded-pill mt-5" href="pg.html">Learn More</a></div>
                         </div>
                     </div>
                 </div>

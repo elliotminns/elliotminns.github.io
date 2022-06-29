@@ -11,6 +11,188 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+ @font-face {
+  font-family: 'omotenashi_2regular';
+  src: url('fonts/gomarice_omotenashi_2-webfont.woff2') format('woff2'),
+       url('fonts/gomarice_omotenashi_2-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.em{
+  font-size: 500rem;
+}
+
+@media (max-width: 500px) {
+  .icons{
+    min-width: 125%;
+  }
+}
+
+@media (max-width: 350px) {
+  .icons{
+    min-width: 150%;
+  }
+}
+
+@media (max-width: 300px) {
+  .icons{
+    min-width: 170%;
+  }
+}
+
+@media (max-width: 250px) {
+  .icons{
+    min-width: 190%;
+  }
+}
+
+@media (max-width: 200px) {
+  .icons{
+    min-width: 210%;
+  }
+}
+
+.flex{
+  display: flex;
+}
+
+.iframe{
+  padding-top: 2rem;
+  display: inline;
+}
+
+.video{
+  align-items: center;
+  display: inline;
+}
+
+.ps_align{
+  padding-top: 0.3rem;
+}
+
+ html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-size: 1rem;
+  line-height: 1.25;
+  background-color: #18222d;
+}
+
+.grid {
+  width: 100%;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-block {
+  width: 50%;
+  min-height: 11.25rem;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+.image-grid {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.image-grid .tile-link:hover .tile-img {
+  top: -1rem;
+  left: -1rem;
+}
+
+.image-grid .tile-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition-property: opacity, top, left, box-shadow;
+  transition-property: opacity, top, left, box-shadow;
+}
+
+.tile-link {
+  display: block;
+}
+
+.tile-link:hover .tile-img {
+  opacity: 1;
+}
+
+.tile-link:hover .tile-img-link {
+  display: block;
+}
+
+.tile-link:hover .tile-img-link:hover .tile-img {
+  opacity: 0.5;
+}
+
+.tile-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.125s;
+  transition-duration: 0.125s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.tile-link:hover .tile-img1 {
+  box-shadow: 5px 5px rgba(45, 186, 233, 0.4), 10px 10px rgba(45, 186, 233, 0.3),
+    15px 15px rgba(45, 186, 233, 0.2), 20px 20px rgba(45, 186, 233, 0.1),
+    25px 25px rgba(45, 186, 233, 0.05);
+}
+
+.tile-link:hover .tile-img2 {
+  box-shadow: 5px 5px rgba(45, 186, 233, 0.4), 10px 10px rgba(45, 186, 233, 0.3),
+    15px 15px rgba(45, 186, 233, 0.2), 20px 20px rgba(45, 186, 233, 0.1),
+    25px 25px rgba(45, 186, 233, 0.05);
+}
+
+.tile-link:hover .tile-img3 {
+  box-shadow: 5px 5px rgba(214, 221, 244, 0.4),
+    10px 10px rgba(214, 221, 244, 0.3), 15px 15px rgba(214, 221, 244, 0.2),
+    20px 20px rgba(214, 221, 244, 0.1), 25px 25px rgba(214, 221, 244, 0.05);
+}
+
+.tile-link:hover .tile-img4 {
+  box-shadow: 5px 5px rgba(244, 170, 200, 0.4),
+    10px 10px rgba(244, 170, 200, 0.3), 15px 15px rgba(244, 170, 200, 0.2),
+    20px 20px rgba(244, 170, 200, 0.1), 25px 25px rgba(244, 170, 200, 0.05);
+}
+
+ /*
+ Text-responsive is first thing after gallery
+ */
+ .text-responsive {
+  padding-top: 5%;
+  font-size: calc(100% + 1vw + 1vh);
+}
+
+.word{
+  padding-top: 5%;
+  font-size: 250%;
+}
+ 
 #footer{
   position:relative;
   bottom:0;
@@ -73,10 +255,10 @@ ul#menu li {
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "omotenashi_2regular";
+  --bs-font-monospace: SFMono-Regular, omotenashi_2regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: Lato, -apple-system, BlinkMacSystemFont, omotenashi_2regular, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -566,24 +748,26 @@ progress {
 }
 
 .display-5 {
-  font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
-  line-height: 1.2;
-}
-@media (min-width: 1200px) {
-  .display-5 {
-    font-size: 3rem;
-  }
-}
-
-.display-6 {
   font-size: calc(1.375rem + 1.5vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
-  .display-6 {
+  .display-5 {
     font-size: 2.5rem;
+  }
+}
+
+.display-pg {
+  font-family: 'omotenashi_2regular';
+  font-size: calc(1.475rem + 1.7vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-pg {
+    font-family: 'omotenashi_2regular';
+    font-size: 2.75rem;
   }
 }
 
@@ -912,7 +1096,7 @@ progress {
 
 .g-5,
 .gx-5 {
-  --bs-gutter-x: 3rem;
+  --bs-gutter-x: 1rem;
 }
 
 .g-5,
@@ -4018,6 +4202,7 @@ textarea.form-control-lg {
   color: #000;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
+  text-align: center;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -6825,7 +7010,7 @@ textarea.form-control-lg {
 }
 
 .top-50 {
-  top: 50% !important;
+  top: 10% !important;
 }
 
 .top-100 {
@@ -7392,6 +7577,7 @@ textarea.form-control-lg {
 
 .mb-0 {
   margin-bottom: 0 !important;
+  padding-top: 5%;
 }
 
 .mb-1 {
@@ -7455,7 +7641,11 @@ textarea.form-control-lg {
 }
 
 .p-2 {
-  padding: 0.5rem !important;
+  padding-left: 0rem !important;
+  padding-top: 0%;
+  padding-bottom: 5%;
+  display: block;
+  align-items: left;
 }
 
 .p-3 {
@@ -7467,7 +7657,12 @@ textarea.form-control-lg {
 }
 
 .p-5 {
-  padding: 2.4rem !important;
+  padding: 2rem !important;
+  padding-left: 0%;
+}
+
+.p-51 {
+  padding-top: 1rem !important;
 }
 
 .px-0 {
@@ -7498,6 +7693,12 @@ textarea.form-control-lg {
 .px-5 {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
+}
+
+.px-51 {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  padding-bottom: -30%;
 }
 
 .py-0 {
@@ -11324,7 +11525,8 @@ textarea.form-control-lg {
   }
 }
 html {
-  scroll-padding-top: 67px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 .btn-xl {
@@ -11354,6 +11556,7 @@ html {
   font-weight: 700;
 }
 .navbar-custom .navbar-nav .nav-item .nav-link {
+  text-align: center;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
@@ -11363,6 +11566,8 @@ html {
 .navbar-brand{
   padding-top: 0%;
   padding-bottom: 0%;
+  text-align: center;
+  align-items: center;
 }
 
 header.masthead {
@@ -11370,7 +11575,7 @@ header.masthead {
   overflow: hidden;
   padding-top: 9rem;
   padding-bottom: 3rem;
-  background: linear-gradient(0deg, #000 0%, #212121 100%);
+  background: linear-gradient(0deg, #BA321A 10%, #000 90%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -11391,7 +11596,7 @@ header.masthead .masthead-content .masthead-subheading {
 @media (min-width: 992px) {
   header.masthead {
     padding-top: 5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
   }
   header.masthead .masthead-content .masthead-heading {
     font-size: 6rem;
