@@ -14,6 +14,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300;400&display=swap');
 
+.pgBody{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#368ABF, #03658C);
+}
+
+#pgTitle{
+  width: 100%;
+  height: auto;
+}
+
+#pgTitleText{
+  font-family: 'omotenashi_2regular';
+}
+
 html,
 body{
   width: 100%;
@@ -7682,8 +7697,9 @@ textarea.form-control-lg {
   padding-left: 0rem !important;
   padding-top: 0%;
   padding-bottom: 5%;
-  display: block;
-  align-items: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .p-3 {
